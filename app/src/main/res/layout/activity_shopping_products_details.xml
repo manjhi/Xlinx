@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ShoppingProductsDetails"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/app_bar_with_cart"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dress"
+                android:padding="@dimen/dp_10"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Round Neck Dresses"
+                android:fontFamily="@font/poppins"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹3299"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/poppins"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹3299"
+                    android:textSize="@dimen/sp_10"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/colorsCycle">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:backgroundTint="#d3d3d3"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/smallSize"
+                    android:layout_margin="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S"
+                    android:elevation="@dimen/dp_5"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/background_bluee_circle"/>
+
+                <TextView
+                    android:id="@+id/mediumSize"
+                    android:layout_margin="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:elevation="@dimen/dp_5"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:background="@drawable/background_whitee_circle"/>
+
+                <TextView
+                    android:id="@+id/largeSize"
+                    android:layout_margin="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L"
+                    android:elevation="@dimen/dp_5"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:background="@drawable/background_whitee_circle"/>
+
+                <TextView
+                    android:id="@+id/xlargeSize"
+                    android:layout_margin="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XL"
+                    android:elevation="@dimen/dp_5"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:background="@drawable/background_whitee_circle"/>
+
+                <TextView
+                    android:id="@+id/xxlargeSize"
+                    android:layout_margin="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XXL"
+                    android:elevation="@dimen/dp_5"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:background="@drawable/background_whitee_circle"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:backgroundTint="#d3d3d3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dp_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-Simple Full sleeves"
+                    android:textSize="@dimen/sp_12"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-Casual fit that is true to size"
+                    android:textSize="@dimen/sp_12"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/AddToCart"
+                android:layout_width="@dimen/dp_250"
+                android:layout_height="@dimen/dp_45"
+                android:text="ADD TO CART"
+                android:background="@drawable/background_button_round_corners"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_40"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

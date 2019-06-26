@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MobileRechargeActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@drawable/app_bar_background">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_keyboard_backspace_white_24dp" />
+
+        <TextView
+            android:id="@+id/bar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:fontFamily="@font/poppins"/>
+
+        <ImageView
+            android:id="@+id/diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/ic_diary" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        app:hintTextAppearance="@color/grey"
+        android:textColorHint="@color/grey"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/mobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="MobileNumber"
+            android:backgroundTint="#fff"
+            android:background="@null"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:enabled="false"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColorHint="@color/grey"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_gravity="center"
+            app:fontFamily="@font/poppins"
+            android:textColor="@color/black"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"
+        android:layout_margin="@dimen/dp_10"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@color/grey"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/operator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Operator"
+            android:backgroundTint="#fff"
+            android:background="@null"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:padding="5dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_gravity="center"
+            android:textColorHint="@color/grey"
+            app:fontFamily="@font/poppins"
+            android:textColor="@color/black"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"
+        android:layout_margin="@dimen/dp_10"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@color/grey"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Amount"
+            android:backgroundTint="#fff"
+            android:background="@null"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:padding="5dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_gravity="center"
+            app:fontFamily="@font/poppins"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"
+        android:layout_margin="@dimen/dp_10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/express"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Express"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/poppins"
+            android:layout_margin="@dimen/dp_5"
+            android:buttonTint="@color/blue"
+            />
+
+        <CheckBox
+            android:id="@+id/recurring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Recurring"
+            android:textColor="@color/grey"
+            android:layout_margin="@dimen/dp_5"
+            android:buttonTint="@color/blue"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/background_button_round_corners"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="Select Offer And Pay"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RECENT"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_20"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d3d3d3"
+        android:layout_margin="@dimen/dp_10"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MobileRechargeCycle">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

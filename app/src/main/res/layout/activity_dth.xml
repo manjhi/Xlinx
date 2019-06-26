@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Activities.DTHActivity">
+
+    <include layout="@layout/app_bar_" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center_horizontal"
+                android:text="Subscriber ID/Registered Mobile Number"
+                android:textColor="#000" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/background_grey"
+                android:hint="Text..."
+                android:layout_marginTop="@dimen/dp_5"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/sp_14"
+                android:paddingLeft="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_5"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/sp_12"
+                android:text="SMS 'ID' to 566777 From your regiterd mobile no. or call 1800130444(Toll Free number) to know your customer ID.balance check and Recharge due date. "
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/proceedbtn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/background_button_round_corners"
+                android:text="Confirm"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.WalletTransferActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar_">
+
+    </include>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Transfer Between Users"-->
+        <!--android:layout_margin="@dimen/dp_20"-->
+        <!--android:textSize="@dimen/sp_18"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:fontFamily="@font/poppins"-->
+        <!--android:textColor="@color/black"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabLayout"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/blue"
+            android:elevation="3dp"
+            android:fontFamily="@font/poppins"
+            app:tabTextColor="@color/black"
+            app:tabIndicator="@color/blue"
+            app:tabIndicatorColor="@color/blue">
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewpager"
+            android:layout_weight="9"
+            >
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+</LinearLayout>

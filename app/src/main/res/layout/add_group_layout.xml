@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/dp_5"-->
+        <!--android:elevation="@dimen/dp_5">-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/addGroupLayout"-->
+            <!--android:layout_width="@dimen/dp_80"-->
+            <!--android:layout_height="@dimen/dp_80"-->
+            <!--android:layout_margin="@dimen/dp_5"-->
+            <!--android:elevation="@dimen/dp_10">-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/profile"-->
+                <!--android:layout_width="@dimen/dp_50"-->
+                <!--android:layout_height="@dimen/dp_50"-->
+                <!--android:layout_centerHorizontal="true">-->
+
+                <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_margin="@dimen/dp_5"-->
+                    <!--android:src="@drawable/ic_man_user"-->
+                    <!--app:civ_border_color="#C4C4C4"-->
+                    <!--app:civ_border_width="@dimen/dp_2" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/remove"-->
+                    <!--android:layout_width="@dimen/dp_20"-->
+                    <!--android:layout_height="@dimen/dp_20"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:src="@drawable/ic_remove" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/names"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/profile"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:fontFamily="@font/poppins"-->
+                <!--android:text="Shaman"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="@dimen/sp_14"-->
+                <!--android:textStyle="bold" />-->
+
+        <!--</RelativeLayout>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+    <RelativeLayout
+        android:id="@+id/addGroupLayout"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_margin="@dimen/dp_5"
+        android:elevation="@dimen/dp_10">
+
+        <RelativeLayout
+            android:id="@+id/profile"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_centerHorizontal="true">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/dp_5"
+                android:src="@drawable/ic_man_user"
+                app:civ_border_color="#C4C4C4"
+                app:civ_border_width="@dimen/dp_2" />
+
+            <ImageView
+                android:id="@+id/remove"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_remove" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins"
+            android:text="Shaman"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

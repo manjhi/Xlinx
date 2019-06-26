@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/phone"
+        android:title=""
+        android:icon="@drawable/ic_script"
+        android:color = "@color/grey"/>
+
+    <item
+        android:id="@+id/messages"
+        android:title=""
+        android:icon="@drawable/ic_chat_bubble"
+        android:color = "@color/grey"/>
+
+    <item
+        android:id="@+id/contacts"
+        android:title=""
+        android:icon="@drawable/ic_phone_book"
+        android:color = "@color/grey"/>
+
+</menu>

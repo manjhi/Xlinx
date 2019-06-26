@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AccountActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar_"/>
+
+    <TextView
+        android:id="@+id/ChangeNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Number"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        android:fontFamily="@font/poppins"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_20"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_margin="@dimen/dp_5">
+
+    </View>
+
+    <TextView
+        android:id="@+id/ChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        android:fontFamily="@font/poppins"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_20"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_margin="@dimen/dp_5">
+
+    </View>
+
+    <TextView
+        android:id="@+id/RequestAccInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request Account Info"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        android:fontFamily="@font/poppins"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_20"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_margin="@dimen/dp_5">
+
+    </View>
+
+    <TextView
+        android:id="@+id/DeleteAcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete My Account"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        android:fontFamily="@font/poppins"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_20"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_margin="@dimen/dp_5">
+
+    </View>
+
+</LinearLayout>

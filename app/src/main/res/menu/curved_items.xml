@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title=""
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_telephone"
+        android:enabled="true" android:id="@+id/phone"/>
+
+    <item android:title=""
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_speech_bubble"
+        android:enabled="true" android:id="@+id/messages"/>
+
+    <item android:title=""
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_user"
+        android:enabled="true" android:id="@+id/profile"/>
+
+</menu>

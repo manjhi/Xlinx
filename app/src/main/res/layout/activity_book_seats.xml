@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.BookSeatsActivity"
+    android:background="@color/white">
+
+    <include layout="@layout/app_bar_"
+        android:id="@+id/bar"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_below="@id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:fontFamily="@font/poppins"
+            android:text="Manje Bistre 2"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:fontFamily="@font/poppins"
+            android:text="PVR VR Punjab, Mohali"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dp_5"
+                android:fontFamily="@font/poppins"
+                android:text="Mon, 15 Apr"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_white"
+                android:elevation="5dp"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:text="6:05pm"/>
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_white"
+                android:elevation="5dp"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:text="6:05pm"/>
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_white"
+                android:elevation="5dp"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:text="6:05pm"/>
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_white"
+                android:elevation="5dp"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:text="6:05pm"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/BookTickets">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#d3d3d3" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bookSeatsCycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#d3d3d3"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BookTickets"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/background_button_round_corners"
+        android:text="Book 2 Tickets"
+        android:layout_alignParentBottom="true"
+        android:textColor="#fff" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/groupInfo"
+        android:title="Group Info"/>
+
+    <item android:id="@+id/groupMedia"
+        android:title="Group Media"/>
+
+    <item android:id="@+id/emailChat"
+        android:title="Email Chat"/>
+
+    <item android:id="@+id/searchMessage"
+        android:title="Search Message"/>
+
+    <item android:id="@+id/wallpaper"
+        android:title="Wallpaper"/>
+
+    <item android:id="@+id/addShortcut"
+        android:title="Add Shortcut"/>
+
+    <item android:id="@+id/clearChat"
+        android:title="Clear Chat"/>
+
+</menu>

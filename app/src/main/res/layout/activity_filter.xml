@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.FilterActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@drawable/app_bar_background">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_cancel_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="Filter"
+            android:textSize="@dimen/sp_16"
+            android:fontFamily="@font/poppins"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="Reset"
+            android:paddingRight="@dimen/dp_10"
+            android:textSize="@dimen/sp_16"
+            android:fontFamily="@font/poppins"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/filterNonAc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shape"
+                android:fontFamily="@font/poppins"
+                android:padding="12dp"
+                android:text="Non AC"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/filterSleeper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterNonAc"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Sleeper Class"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:fontFamily="@font/poppins" />
+
+            <TextView
+                android:id="@+id/filterAc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_below="@+id/filterSleeper"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape"
+                android:fontFamily="@font/poppins"
+                android:padding="12dp"
+                android:text="AC"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/filterAcChoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filterAc"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/filterAC3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/filterNonAc"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="AC 3 Tier"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/poppins" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/lines">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/filterAC2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/filterNonAc"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="AC 2 Tier"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/poppins" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/lines">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/filterAllOther"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/filterNonAc"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="All Other ACs"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/poppins" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/filterDepartureTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_below="@+id/filterAcChoice"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape"
+                android:fontFamily="@font/poppins"
+                android:padding="12dp"
+                android:text="Departure Time"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/filterDepSuns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterDepartureTime"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_sunset" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_sunset" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:rotation="180"
+                    android:src="@drawable/ic_sunset" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/filterDeptTimeChoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filterDepSuns"
+                android:layout_marginHorizontal="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/filterDept5_11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="05:00-11:00"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/poppins" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/lines">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/filterDept11_17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="11:00-17:00"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/poppins" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/lines"></View>
+
+                <TextView
+                    android:id="@+id/filterDept17_23"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="17:00-23:00"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/poppins" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/filterArrivalTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_below="@+id/filterDeptTimeChoice"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape"
+                android:fontFamily="@font/poppins"
+                android:padding="12dp"
+                android:text="Arrival Time"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/filterArrSuns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterArrivalTime"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_sunset" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_sunset" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:rotation="180"
+                    android:src="@drawable/ic_sunset" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/filterArrTimeChoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filterArrSuns"
+                android:layout_marginHorizontal="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/filterArr5_11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="05:00-11:00"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/poppins" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/lines"></View>
+
+                <TextView
+                    android:id="@+id/filterArr11_17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="11:00-17:00"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/poppins" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/lines"></View>
+
+                <TextView
+                    android:id="@+id/filterArr17_23"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="17L00-23:00"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/poppins" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/filterOriginStation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_below="@+id/filterArrTimeChoice"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape"
+                android:fontFamily="@font/poppins"
+                android:padding="12dp"
+                android:text="Origin Station(s)"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/filterOrigStatList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filterOriginStation"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/filterOrigStat1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:padding="12dp"
+                        android:text="New Delhi"
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/filterCheckOrigStat1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginVertical="12dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/filterOrigStat1"
+                        android:background="@color/lines"></View>
+
+                    <TextView
+                        android:id="@+id/filterOrigStat2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/filterOrigStat1"
+                        android:fontFamily="@font/poppins"
+                        android:padding="12dp"
+                        android:text="Adrsh Ngr Delhi"
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/filterCheckOrigStat2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/filterOrigStat1"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginVertical="12dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/filterDestStation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_below="@+id/filterOrigStatList"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape"
+                android:fontFamily="@font/poppins"
+                android:padding="12dp"
+                android:text="Destination Station(s)"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/filterDestStatList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filterDestStation"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/filterDestStat1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:padding="12dp"
+                        android:text="Sealdah"
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/filterCheckDestStat1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginVertical="12dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/filterDestStat1"
+                        android:background="@color/lines"></View>
+
+                    <TextView
+                        android:id="@+id/filterDestStat2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/filterDestStat1"
+                        android:fontFamily="@font/poppins"
+                        android:padding="12dp"
+                        android:text="Howrah Jn"
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/filterCheckDestStat2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/filterDestStat1"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginVertical="12dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/filterApplyBut"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_45"
+                android:layout_below="@id/filterDestStatList"
+                android:layout_centerInParent="true"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/background_button_round_corners"
+                android:paddingHorizontal="100dp"
+                android:text="Apply"
+                android:fontFamily="@font/poppins"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ScanQRActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar_">
+
+    </include>
+
+    <ImageView
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_120"
+        android:src="@drawable/logo"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INDONESIA RAYA"
+        android:textSize="@dimen/dp_25"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#5071F6"
+        android:fontFamily="@font/poppins"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company Code : 1111"
+        android:textSize="@dimen/sp_17"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number : 99999-88888"
+        android:textSize="@dimen/sp_17"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Number : 1234567887654321"
+        android:textSize="@dimen/sp_17"
+        android:layout_gravity="center"
+        android:textColor="#5071F6"
+        android:fontFamily="@font/poppins"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance : Rp 0.00"
+        android:textSize="@dimen/sp_17"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your PIN"
+        android:background="@null"
+        android:textSize="@dimen/sp_17"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dp_20"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d3d3d3">
+
+    </View>
+
+    <Button
+        android:id="@+id/scanQR"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_40"
+        android:text="Scan QR"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/background_button_round_corners"/>
+
+</LinearLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.VerificationActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar">
+
+    </include>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="@dimen/dp_90"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_40"
+            android:src="@drawable/verification" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="Enter the 4-digit code send to at +919999966666"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ed1"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="1"
+                android:fontFamily="@font/poppins"
+                android:textColor="#000" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="3dp"
+                android:background="@color/grey"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ed2"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:background="@null"
+                android:maxLength="1"
+                android:fontFamily="@font/poppins"
+                android:textColor="#000" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="3dp"
+                android:background="@color/grey"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ed3"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:background="@null"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:fontFamily="@font/poppins"
+                android:textColor="#000" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="3dp"
+                android:background="@color/grey"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/ed4"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:background="@null"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:fontFamily="@font/poppins"
+                android:textColor="#000" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="3dp"
+                android:background="@color/grey"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:layout_margin="@dimen/dp_15"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Resend code"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"/>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_margin="@dimen/dp_5">-->
+
+        <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="_"-->
+            <!--android:enabled="false"-->
+            <!--android:layout_margin="@dimen/dp_5"-->
+            <!--android:background="@null"/>-->
+
+        <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="_"-->
+            <!--android:enabled="false"-->
+            <!--android:layout_margin="@dimen/dp_5"-->
+            <!--android:background="@null"/>-->
+
+        <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="_"-->
+            <!--android:enabled="false"-->
+            <!--android:layout_margin="@dimen/dp_5"-->
+            <!--android:background="@null"/>-->
+
+        <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="_"-->
+            <!--android:enabled="false"-->
+            <!--android:layout_margin="@dimen/dp_5"-->
+            <!--android:background="@null"/>-->
+
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/NextLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/dp_20"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        android:background="@drawable/background_circle_blue">
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_arrow_forward_black_24dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

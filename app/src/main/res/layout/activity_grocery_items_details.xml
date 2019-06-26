@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.GroceryItemsDetailsActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar_with_cart"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/prdoDetLower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/prodDetName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="100dp"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:text="Patanjali Groundnut Oil ltr(B) - T"
+                            android:textColor="#000"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            android:id="@+id/prodDetPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prodDetName"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/poppins"
+                            android:text="$10.00"
+                            android:textColor="#000"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <RatingBar
+                            android:id="@+id/prodDetRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prodDetPrice"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="-10dp"
+                            android:rating="5"
+                            android:progressTint="#FFEB3B"
+                            style="@style/Base.Widget.AppCompat.RatingBar.Indicator"
+                            android:scaleX="0.5"
+                            android:scaleY="0.5" />
+
+                        <TextView
+                            android:id="@+id/prodDetQuatity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prodDetRating"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/poppins"
+                            android:text="Quantity"
+                            android:textColor="@color/grey"
+                            android:textSize="20sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/prodDetQuatityCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prodDetQuatity"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp">
+
+                            <Button
+                                android:id="@+id/prodDetDecrement"
+                                android:layout_width="60dp"
+                                android:layout_height="45dp"
+                                android:background="@drawable/background_buttonn"
+                                android:fontFamily="@font/poppins"
+                                android:gravity="center"
+                                android:layout_centerVertical="true"
+                                android:text="-"
+                                android:textColor="#000"
+                                android:textSize="28dp" />
+
+                            <TextView
+                                android:id="@+id/prodDetNumerOfItem"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:layout_toRightOf="@id/prodDetDecrement"
+                                android:fontFamily="@font/poppins"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:text="1"
+                                android:textStyle="bold"
+                                android:textColor="#000"
+                                android:textSize="24dp" />
+
+                            <Button
+                                android:id="@+id/prodDetIncrement"
+                                android:layout_width="60dp"
+                                android:layout_height="45dp"
+                                android:layout_toRightOf="@id/prodDetNumerOfItem"
+                                android:background="@drawable/background_buttonn"
+                                android:fontFamily="@font/poppins"
+                                android:gravity="center"
+                                android:text="+"
+                                android:layout_centerVertical="true"
+                                android:textColor="#000"
+                                android:textSize="28dp" />
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/prodDetBuyNow"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_45"
+                            android:layout_below="@id/prodDetQuatityCount"
+                            android:layout_marginHorizontal="60dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/background_round_corners_blue_outline"
+                            android:fontFamily="@font/poppins"
+                            android:text="BUY NOW"
+                            android:textColor="@color/blue"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/prodDetAddToCart"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_45"
+                            android:layout_below="@id/prodDetBuyNow"
+                            android:layout_marginHorizontal="60dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/background_button_round_corners"
+                            android:fontFamily="@font/poppins"
+                            android:text="ADD to cart"
+                            android:textColor="#fff"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/prodDetUpper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_250">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_200"
+                        android:layout_height="@dimen/dp_200"
+                        android:layout_centerInParent="true"
+                        android:paddingVertical="20dp"
+                        android:src="@drawable/oil" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

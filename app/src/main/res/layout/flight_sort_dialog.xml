@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_200"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_15"
+    android:layout_gravity="center_horizontal">
+    
+    <Button
+        android:id="@+id/MostPopular"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:text="Most Popular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        android:background="@drawable/background_blue_button"
+        />
+
+    <Button
+        android:id="@+id/CheapestRate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:text="Cheapest Rate"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/sp_12"
+        android:background="@drawable/background_blue_outline_white_background"
+        />
+
+    <Button
+        android:id="@+id/HighlyRated"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:text="Highly Rated"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/background_blue_outline_white_background"
+        />
+</LinearLayout>

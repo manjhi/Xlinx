@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/shop_products_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5sp"
+        android:layout_margin="@dimen/dp_10"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_10">
+
+            <ImageView
+                android:id="@+id/shop_products_recycler_card_image"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginTop="5sp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/cooking_" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cooking Oils"
+                android:textColor="#000"
+                android:maxLines="1"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/sp_13"
+                android:layout_below="@id/shop_products_recycler_card_image"
+                android:layout_marginTop="5sp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/shop_products_extended_recycler_card_big_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upto 60% off"
+                android:textColor="@color/blue"
+                android:maxLines="1"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/sp_12"
+                android:layout_below="@id/shop_products_extended_recycler_card_big_text"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/shop_products_extended_recycler_card_text"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

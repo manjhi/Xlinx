@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">XLinX</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="demo_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="beauty_grooming"><![CDATA[Beauty &\nGrooming]]></string>
+    <string name="atta_ghee_more"><![CDATA[Atta, Ghee & More]]></string>
+
+    <string-array name="spinneritem">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+</resources>

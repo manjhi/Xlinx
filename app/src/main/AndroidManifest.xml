@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="omninos.com.xlinx">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Utils.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activities.SecurityActivity"></activity>
+        <activity android:name=".Fragments.ConfirmFlightPaymentFragment" />
+        <activity android:name=".Activities.InviteFriendActivity" />
+        <activity android:name=".Activities.ConfirmFlightActivity" />
+        <activity android:name=".Activities.FlightDetailsActivity" />
+        <activity android:name=".Activities.FlightFilterActivity" />
+        <activity android:name=".Activities.FlightNextActivity" />
+        <activity android:name=".Activities.FlightActivity" />
+        <activity android:name=".Activities.GroupInfoActivity" />
+        <activity android:name=".Activities.GroupChatActivity" />
+        <activity android:name=".Activities.AfterSeatBookingActivity" />
+        <activity android:name=".Activities.BookSeatsActivity" />
+        <activity android:name=".Activities.BookNowActivity" />
+        <activity
+            android:name=".Activities.BookMoviesTickets"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activities.DTHActivity" />
+        <activity android:name=".Activities.DTHselectProvider" />
+        <activity android:name=".Activities.AddPostActivity" />
+        <activity android:name=".Activities.ViewContactActivity" />
+        <activity android:name=".Activities.ChatActivity" />
+        <activity android:name=".Activities.CallActivity" />
+        <activity android:name=".Activities.ProfileActivity" />
+        <activity android:name=".Activities.ShoppingCartDetails" />
+        <activity android:name=".Activities.ShoppingProductsDetails" />
+        <activity android:name=".Activities.ShoppingNextActivity" />
+        <activity android:name=".Activities.ShoppingActivity" />
+        <activity android:name=".Activities.FilterActivity" />
+        <activity android:name=".Activities.GroceryItemsDetailsActivity" />
+        <activity android:name=".Activities.GroceryItemsActivity" />
+        <activity android:name=".Activities.GroceryActivity" />
+        <activity android:name=".Activities.SearchTrainsActivity" />
+        <activity android:name=".Activities.MetroActivity" />
+        <activity android:name=".Activities.CabDetailsActivity" />
+        <activity android:name=".Activities.CabNextActivity" />
+        <activity android:name=".Activities.CabActivity" />
+        <activity android:name=".Activities.BlockedContactsActivity" />
+        <activity
+            android:name=".Activities.MobileRechargeActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activities.StoreActivity" />
+        <activity android:name=".Activities.AppThemeActivity" />
+        <activity android:name=".Activities.NotificationsActivity" />
+        <activity android:name=".Activities.StickersActivity" />
+        <activity android:name=".Activities.PrivacyActivity" />
+        <activity android:name=".Activities.GeneratedQRActivity" />
+        <activity android:name=".Activities.AppInfoActivity" />
+        <activity android:name=".Activities.PrivacyPolicyActivity" />
+        <activity android:name=".Activities.TermsAndConditionsActivity" />
+        <activity android:name=".Activities.ContactUsActivity" />
+        <activity android:name=".Activities.HelpActivity" />
+        <activity android:name=".Activities.WalletActivity" />
+        <activity android:name=".Activities.DeleteMyAccount" />
+        <activity android:name=".Activities.RequestAccountInfo" />
+        <activity android:name=".Activities.ChangePasswordActivity" />
+        <activity android:name=".Activities.ChangeNumberActivity" />
+        <activity android:name=".Activities.SettingsActivity" />
+        <activity android:name=".Activities.AccountActivity" />
+        <activity
+            android:name=".Activities.NewGroupInfoActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activities.GenerateQRActivity" />
+        <activity android:name=".Activities.ScanQRActivity" />
+        <activity android:name=".Activities.WalletNextActivity" />
+        <activity android:name=".Activities.WalletTransferActivity" />
+        <activity android:name=".Activities.NewGroupActivity" />
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.UserNameActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.VerificationActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.MobileNumberActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activities.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDELpqMi27VwVMB44JliiQG3wSDAYEuG_c" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
